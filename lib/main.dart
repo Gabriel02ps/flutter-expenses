@@ -1,8 +1,5 @@
-import 'package:expenses/components/transaction_form.dart';
-import 'package:expenses/components/transaction_list.dart';
 import 'package:expenses/components/transaction_user.dart';
 import 'package:flutter/material.dart';
-import 'models/transaction.dart';
 
 main() => runApp(const ExpensesApp());
 
@@ -10,12 +7,12 @@ class ExpensesApp extends StatelessWidget {
   const ExpensesApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MyHomePage());
+    return const MaterialApp(home: MyHomePage());
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({super.key});
+  const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
